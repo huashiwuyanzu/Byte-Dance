@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-essential"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "vue"
+  ],
+  "rules": {
+    // TS/JS使用的规则
+    "no-var": "warn",
+    "semi": "error",
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
+    "no-new-wrappers": "error",
+    "no-dupe-keys": "warn",
+    "no-unexpected-multiline": "warn",
+    "no-unreachable": "warn",
+    "no-empty-pattern": "error",
+    "no-fallthrough": "warn",
+    "no-redeclare": "error",
+    "block-spacing": [
+      "warn",
+      "always"
+    ],
+    "camelcase": "warn",
+    "eol-last": "warn",
+    // Vue使用的规则
+    "vue/html-indent": [
+      "error",
+      2
+    ],
+    "vue/html-self-closing": "off"
+  }
+}
